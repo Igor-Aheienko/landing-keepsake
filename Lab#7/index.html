@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keepsake — design agency</title>
+  <meta name="description" content="Keepsake is a design agency: branding, print, web and motion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Keepsake home"><span class="logo__mark">K</span><span class="logo__text">Keepsake</span></a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true" tabindex="-1">
+      <label class="burger" for="menu-toggle" role="button" tabindex="0" aria-controls="menu" aria-label="Open or close menu">
+        <span class="burger__bar"></span><span class="burger__bar"></span><span class="burger__bar"></span>
+      </label>
+      <div class="menu" id="menu">
+        <nav class="nav" aria-label="Main">
+          <ul class="nav__list"><li><a class="nav__link is-active" href="#top" aria-current="page">Home</a></li><li><a class="nav__link" href="#works">Works</a></li><li><a class="nav__link" href="#services">Services</a></li><li><a class="nav__link" href="#journal">Journal</a></li><li><a class="nav__link" href="#footer">Contact</a></li></ul>
+        </nav>
+        <a class="btn btn--primary menu__contact" href="#footer"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1h14v10H1zM1 1l7 6 7-6" fill="none" stroke="#fff" stroke-width="1.5"/></svg> Contact us</a>
+        <a class="fav" href="#" aria-label="Favourites"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14S1.5 9.6 1.5 5.6A3.4 3.4 0 0 1 8 4.2a3.4 3.4 0 0 1 6.5 1.4C14.5 9.6 8 14 8 14z" fill="#fff"/></svg><span class="fav__text">Favourites</span></a>
+        <div class="menu__extra">
+          <p>hello@keepsake.studio<br>+1 234 567 890</p>
+          <ul class="socials"><li><a class="social" href="#" aria-label="Twitter" style="--c:#FFE35A"></a></li><li><a class="social" href="#" aria-label="Facebook" style="--c:#5AB0FF"></a></li><li><a class="social" href="#" aria-label="Dribbble" style="--c:#2CD5C4"></a></li><li><a class="social" href="#" aria-label="Instagram" style="--c:#F07BD0"></a></li><li><a class="social" href="#" aria-label="Pinterest" style="--c:#F95858"></a></li></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">We are Keepsake, a digital design agency</h1>
+        <p class="hero__text">We create brands, websites and printed things that people want to keep.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#works">See our works</a>
+          <a class="btn btn--secondary" href="#footer">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <h2 class="section-title" id="works-title">Our awesome works</h2>
+      <input class="filter-input" type="radio" name="filter" id="f-all" checked>
+      <input class="filter-input" type="radio" name="filter" id="f-branding">
+      <input class="filter-input" type="radio" name="filter" id="f-identity">
+      <input class="filter-input" type="radio" name="filter" id="f-print">
+      <input class="filter-input" type="radio" name="filter" id="f-web">
+      <input class="filter-input" type="radio" name="filter" id="f-motion">
+        <div class="chips" role="group" aria-label="Filter works">
+        <label class="chip" for="f-all">All</label>
+        <label class="chip" for="f-branding">Branding</label>
+        <label class="chip" for="f-identity">Identity</label>
+        <label class="chip" for="f-print">Print</label>
+        <label class="chip" for="f-web">Web</label>
+        <label class="chip" for="f-motion">Motion</label>
+        </div>
+        <div class="grid">
+        <article class="card" data-category="branding">
+          <a class="card__link" href="#work-1" style="--card-bg:#E6FBFB">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Piece Paper</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Branding</span>
+            </span>
+            <span class="visually-hidden">Piece Paper, Branding</span>
+          </a>
+        </article>
+        <article class="card" data-category="print">
+          <a class="card__link" href="#work-2" style="--card-bg:#FFF1D0">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Vol. 16</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Print</span>
+            </span>
+            <span class="visually-hidden">Vol. 16, Print</span>
+          </a>
+        </article>
+        <article class="card" data-category="identity">
+          <a class="card__link" href="#work-3" style="--card-bg:#7C7B8A">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Disk Cover</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Identity</span>
+            </span>
+            <span class="visually-hidden">Disk Cover, Identity</span>
+          </a>
+        </article>
+        <article class="card" data-category="web">
+          <a class="card__link" href="#work-4" style="--card-bg:#33343C">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Profit Ui</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Web</span>
+            </span>
+            <span class="visually-hidden">Profit Ui, Web</span>
+          </a>
+        </article>
+        <article class="card" data-category="motion">
+          <a class="card__link" href="#work-5" style="--card-bg:#FFFBEA">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Wall St.</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Motion</span>
+            </span>
+            <span class="visually-hidden">Wall St., Motion</span>
+          </a>
+        </article>
+        <article class="card" data-category="identity">
+          <a class="card__link" href="#work-6" style="--card-bg:#F2F2F2">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Business Card</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Identity</span>
+            </span>
+            <span class="visually-hidden">Business Card, Identity</span>
+          </a>
+        </article>
+        <article class="card" data-category="print">
+          <a class="card__link" href="#work-7" style="--card-bg:#4A4B53">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">John Doe</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Print</span>
+            </span>
+            <span class="visually-hidden">John Doe, Print</span>
+          </a>
+        </article>
+        <article class="card" data-category="branding">
+          <a class="card__link" href="#work-8" style="--card-bg:#5F7092">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Seal Fabric</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Branding</span>
+            </span>
+            <span class="visually-hidden">Seal Fabric, Branding</span>
+          </a>
+        </article>
+        <article class="card" data-category="motion">
+          <a class="card__link" href="#work-9" style="--card-bg:#F6F6F6">
+            <span class="card__overlay">
+              <span class="card__plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2"/></svg></span>
+              <h3 class="card__title">Triangle</h3>
+              <span class="card__line"></span>
+              <span class="card__cat">Motion</span>
+            </span>
+            <span class="visually-hidden">Triangle, Motion</span>
+          </a>
+        </article>
+        </div>
+        <a class="btn btn--secondary works__more" href="#works">Load more works</a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2 class="cta__title">Would you love to work with us?</h2>
+        <a class="btn btn--primary" href="#footer"><svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1h14v10H1zM1 1l7 6 7-6" fill="none" stroke="#fff" stroke-width="1.5"/></svg> Contact us</a>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="section-title" id="services-title">What do we do</h2>
+        <div class="services">
+        <article class="service">
+          <div class="service__icon"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="#F95858" stroke-width="2"/><path d="M11 16h10M16 11v10" stroke="#F95858" stroke-width="2"/></svg></div>
+          <h3 class="service__title">Web design</h3>
+          <p>We design fast, clear interfaces that people enjoy using.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="#F95858" stroke-width="2"/><path d="M11 16h10M16 11v10" stroke="#F95858" stroke-width="2"/></svg></div>
+          <h3 class="service__title">Brand identity</h3>
+          <p>Logos, colours and type that make your brand memorable.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="#F95858" stroke-width="2"/><path d="M11 16h10M16 11v10" stroke="#F95858" stroke-width="2"/></svg></div>
+          <h3 class="service__title">Print design</h3>
+          <p>Posters, books and packaging made with care for detail.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="#F95858" stroke-width="2"/><path d="M11 16h10M16 11v10" stroke="#F95858" stroke-width="2"/></svg></div>
+          <h3 class="service__title">Motion</h3>
+          <p>Short animations that bring your story to life.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Statistics">
+      <div class="container">
+        <ul class="stats__list">
+        <li class="stat"><span class="stat__num">204</span><span class="stat__label">Projects done</span></li>
+        <li class="stat"><span class="stat__num">5</span><span class="stat__label">Awards won</span></li>
+        <li class="stat"><span class="stat__num">64</span><span class="stat__label">Happy clients</span></li>
+        <li class="stat"><span class="stat__num">15</span><span class="stat__label">Team members</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="clients-title">
+      <div class="container">
+        <h2 class="section-title" id="clients-title">Clients &amp; kind words</h2>
+        <ul class="clients">
+        <li class="client">Client 1</li>
+        <li class="client">Client 2</li>
+        <li class="client">Client 3</li>
+        <li class="client">Client 4</li>
+        <li class="client">Client 5</li>
+        <li class="client">Client 6</li>
+        </ul>
+<figure class="review">
+  <svg class="review__quote" width="36" height="28" viewBox="0 0 36 28" aria-hidden="true"><path d="M0 28V14C0 6 5 1 13 0v5c-4 1-6 4-6 7h6v16zM20 28V14c0-8 5-13 13-14v5c-4 1-6 4-6 7h6v16z" fill="#F95858"/></svg>
+  <blockquote class="review__text">Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</blockquote>
+  <div class="review__footer">
+    <figcaption class="review__author">
+      <span class="avatar" aria-hidden="true">OM</span>
+      <span><strong class="review__name">Olena Marchenko</strong><br><span class="review__role">Marketing Lead, Nordly</span></span>
+    </figcaption>
+    <div class="dots" aria-hidden="true"><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span></div>
+  </div>
+</figure>
+      </div>
+    </section>
+
+    <section class="section" id="journal" aria-labelledby="journal-title">
+      <div class="container">
+        <h2 class="section-title" id="journal-title">From the journal</h2>
+        <div class="journal">
+        <article class="post">
+          <a class="post__thumb" href="#post-1" aria-label="How to build a brand that lasts"></a>
+          <div class="post__body">
+            <p class="post__meta">12 Mar 2026 / <span>Branding</span></p>
+            <h3 class="post__title">How to build a brand that lasts</h3>
+            <p>Short announcement of the article that gives the reader a reason to click through.</p>
+            <a class="post__more" href="#post-1">Read more</a>
+          </div>
+        </article>
+        <article class="post">
+          <a class="post__thumb" href="#post-2" aria-label="Why paper still matters"></a>
+          <div class="post__body">
+            <p class="post__meta">02 Mar 2026 / <span>Print</span></p>
+            <h3 class="post__title">Why paper still matters</h3>
+            <p>Short announcement of the article that gives the reader a reason to click through.</p>
+            <a class="post__more" href="#post-2">Read more</a>
+          </div>
+        </article>
+        <article class="post">
+          <a class="post__thumb" href="#post-3" aria-label="Designing for small screens first"></a>
+          <div class="post__body">
+            <p class="post__meta">21 Feb 2026 / <span>Web</span></p>
+            <h3 class="post__title">Designing for small screens first</h3>
+            <p>Short announcement of the article that gives the reader a reason to click through.</p>
+            <a class="post__more" href="#post-3">Read more</a>
+          </div>
+        </article>
+        <article class="post">
+          <a class="post__thumb" href="#post-4" aria-label="A short guide to micro-animation"></a>
+          <div class="post__body">
+            <p class="post__meta">09 Feb 2026 / <span>Motion</span></p>
+            <h3 class="post__title">A short guide to micro-animation</h3>
+            <p>Short announcement of the article that gives the reader a reason to click through.</p>
+            <a class="post__more" href="#post-4">Read more</a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__newsletter">
+          <h2 class="footer__title">Newsletter</h2>
+          <p class="footer__text">Fresh news about design, ideas, news from our studio.</p>
+          <form class="subscribe" action="#subscribed" method="get">
+            <label class="visually-hidden" for="email">Your email address</label>
+            <div class="subscribe__row">
+              <input class="subscribe__input" type="email" id="email" name="email" placeholder="Your email address" required aria-describedby="email-error">
+              <button class="btn btn--primary" type="submit">Subscribe</button>
+            </div>
+            <p class="subscribe__error" id="email-error">Please enter a valid email address.</p>
+            <label class="subscribe__agree"><input type="checkbox" name="agree" required> I agree to the privacy policy</label>
+          </form>
+          <p class="subscribe__success" id="subscribed" tabindex="-1">Yes! Check your inbox to confirm.</p>
+        </div>
+        <div class="footer__cols">
+          <nav aria-label="Studio"><h2 class="footer__title">Studio</h2><ul class="footer__links"><li><a href="#">About us</a></li><li><a href="#">Our works</a></li><li><a href="#">Journal</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></nav>
+          <nav aria-label="Services"><h2 class="footer__title">Services</h2><ul class="footer__links"><li><a href="#">Web design</a></li><li><a href="#">Brand identity</a></li><li><a href="#">Print design</a></li><li><a href="#">Illustration</a></li><li><a href="#">Motion design</a></li></ul></nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="socials"><li><a class="social" href="#" aria-label="Twitter" style="--c:#FFE35A"></a></li><li><a class="social" href="#" aria-label="Facebook" style="--c:#5AB0FF"></a></li><li><a class="social" href="#" aria-label="Dribbble" style="--c:#2CD5C4"></a></li><li><a class="social" href="#" aria-label="Instagram" style="--c:#F07BD0"></a></li><li><a class="social" href="#" aria-label="Pinterest" style="--c:#F95858"></a></li></ul>
+        <p class="copyright">© 2026 Keepsake. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="#fff" stroke-width="2"/></svg></a>
+</body>
+</html>
